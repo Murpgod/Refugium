@@ -4,7 +4,7 @@ SMODS.Joker{ --Cave Monkey
         ['name'] = 'Cave Monkey',
         ['text'] = {
             [1] = 'Me Hit Rock',
-            [2] = '{C:inactive, s:0.6}and it went negative{}'
+            [2] = '{C:inactive,s:0.6}and it went negative{}'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
