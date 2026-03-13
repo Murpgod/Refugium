@@ -2,17 +2,17 @@ SMODS.Joker{ --Horseboard
     key = "horseboard",
     config = {
         extra = {
-            emult = 8
+            mult = 8
         }
     },
     loc_txt = {
         ['name'] = 'Horseboard',
         ['text'] = {
-            [1] = '{X:enhanced,C:white}^^1{} Mult',
+            [1] = '{X:red,C:white}X1{} Mult',
             [2] = 'for every {C:attention}horse react{} in',
             [3] = '{C:dark_edition}Bloonlatro horseboard{}',
             [4] = '(in sholatro-ideas, Bloonlatro server)',
-            [5] = '{C:inactive}(Currently{} {X:enhanced,C:white}^^8{} {C:inactive}Mult){}'
+            [5] = '{C:inactive}(Currently{} {X:red,C:white}X8{} {C:inactive}Mult){}'
         },
         ['unlock'] = {
             [1] = ''
@@ -42,7 +42,7 @@ SMODS.Joker{ --Horseboard
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  then
                 return {
-                    ee_mult = card.ability.extra.emult
+                    Xmult = card.ability.extra.mult
                 }
         end
     end
