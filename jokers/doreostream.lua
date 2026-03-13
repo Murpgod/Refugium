@@ -17,8 +17,8 @@ SMODS.Joker{ --Doreo stream
         }
     },
     pos = {
-        x = 4,
-        y = 1
+        x = 9,
+        y = 5
     },
     display_size = {
         w = 71 * 1, 
