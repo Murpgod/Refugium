@@ -26,6 +26,7 @@ SMODS.Joker{ --Ploone
     cost = 8,
     rarity = 3,
     blueprint_compat = true,
+    demicoloncompat = true,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
@@ -33,7 +34,7 @@ SMODS.Joker{ --Ploone
     atlas = 'CustomJokers',
 
     calculate = function(self, card, context)
-        if context.ending_shop  then
+        if context.ending_shop or context.forcetrigger then
                 return {
                     func = function()
             local created_joker = true

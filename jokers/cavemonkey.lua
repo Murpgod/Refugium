@@ -21,6 +21,7 @@ SMODS.Joker{ --Cave Monkey
     cost = 9,
     rarity = 3,
     blueprint_compat = true,
+    demicoloncompat = true,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
@@ -28,7 +29,7 @@ SMODS.Joker{ --Cave Monkey
     atlas = 'CustomJokers',
 
     calculate = function(self, card, context)
-        if context.setting_blind  then
+        if context.setting_blind or context.forcetrigger then
                 return {
                     func = function()
                 local card_front = pseudorandom_element(G.P_CARDS, pseudoseed('add_card_hand'))

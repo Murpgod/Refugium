@@ -29,6 +29,7 @@ SMODS.Joker{ --Horseboard
     cost = 20,
     rarity = 4,
     blueprint_compat = true,
+    demicoloncompat = true,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
@@ -36,7 +37,12 @@ SMODS.Joker{ --Horseboard
     atlas = 'CustomJokers',
 
     calculate = function(self, card, context)
-        if context.cardarea == G.jokers and context.joker_main  then
+        if context.cardarea == G.jokers and context.joker_main then
+                return {
+                    Xmult = card.ability.extra.mult
+                }
+        end
+        if context.forcetrigger then
                 return {
                     Xmult = card.ability.extra.mult
                 }

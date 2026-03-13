@@ -29,6 +29,7 @@ SMODS.Joker{ --Shiniest award (v38)
     cost = 4,
     rarity = 2,
     blueprint_compat = true,
+    demicoloncompat = true,
     eternal_compat = true,
     perishable_compat = false,
     unlocked = true,
@@ -51,6 +52,11 @@ SMODS.Joker{ --Shiniest award (v38)
                     message = "Update!"
                 }
             end
+        end
+        if context.forcetrigger then
+            return {
+                mult = card.ability.extra.mult
+            }
         end
     end
 }

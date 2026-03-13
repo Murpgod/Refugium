@@ -27,13 +27,14 @@ SMODS.Joker{ --Geraldo (v31.0)
     rarity = 1,
     blueprint_compat = true,
     eternal_compat = true,
+    demicoloncompat = true,
     perishable_compat = true,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
 
     calculate = function(self, card, context)
-        if context.reroll_shop  then
+        if context.reroll_shop or context.forcetrigger then
                 return {
                     func = function()
             G.E_MANAGER:add_event(Event({

@@ -25,6 +25,7 @@ SMODS.Joker{ --Ancient meme
     cost = 21,
     rarity = "sholextra_peculiar",
     blueprint_compat = false,
+    demicoloncompat = true,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
@@ -32,7 +33,7 @@ SMODS.Joker{ --Ancient meme
     atlas = 'CustomJokers',
 
     calculate = function(self, card, context)
-        if context.reroll_shop  then
+        if context.reroll_shop or context.forcetrigger then
                 return {
                     func = function()
                     local target_amount = card.ability.extra.dollars
