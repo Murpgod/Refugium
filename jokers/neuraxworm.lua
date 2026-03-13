@@ -27,7 +27,7 @@ SMODS.Joker{ --Neurax worm
         h = 95 * 1
     },
     cost = 30,
-    rarity = "sholium_peculiar",
+    rarity = "sholextra_peculiar",
     blueprint_compat = true,
     demicoloncompat = true,
     eternal_compat = true,
@@ -49,14 +49,14 @@ SMODS.Joker{ --Neurax worm
       end,
 
     loc_vars = function(self, info_queue, card)
-        local new_numerator, new_denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_sholium_neuraxworm') 
+        local new_numerator, new_denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_sholextra_neuraxworm') 
         return {vars = {card.ability.extra.mult, new_numerator, new_denominator}}
     end,
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.hand and not context.end_of_round then
             if true then
-                if SMODS.pseudorandom_probability(card, 'group_0_ea22710b', 1, card.ability.extra.odds, 'j_sholium_neuraxworm', false) then
+                if SMODS.pseudorandom_probability(card, 'group_0_ea22710b', 1, card.ability.extra.odds, 'j_sholextra_neuraxworm', false) then
               SMODS.calculate_effect({e_mult = card.ability.extra.mult}, card)
           end
             end
