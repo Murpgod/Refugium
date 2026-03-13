@@ -77,8 +77,7 @@ SMODS.Joker{ --Tricky tracks
                         card.ability.extra.scale = lenient_bignum((3 - card.ability.extra.mult) * 0.1 + 0.1)
                         return true
                     end,
-                    colour = G.C.BLUE,
-                    Xmult = card.ability.extra.mult
+                    colour = G.C.BLUE
                     }
                 }
             }
