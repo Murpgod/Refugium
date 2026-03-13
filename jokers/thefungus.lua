@@ -28,7 +28,7 @@ SMODS.Joker{ --The Fungus
         h = 95 * 1
     },
     cost = 30,
-    rarity = "sholium_peculiar",
+    rarity = "sholextra_peculiar",
     blueprint_compat = true,
     demicoloncompat = true,
     eternal_compat = true,
