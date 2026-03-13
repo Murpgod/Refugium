@@ -66,4 +66,3 @@ SMODS.Joker{ --Clubism
         end
     end
 }
-end
