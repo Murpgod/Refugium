@@ -40,7 +40,7 @@ SMODS.Joker{ --Iciclez_
             local created_joker = true
             G.E_MANAGER:add_event(Event({
                 func = function()
-                    local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_sholium_iciclezalt' })
+                    local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_sholextra_iciclezalt' })
                     if joker_card then
                         
                         
