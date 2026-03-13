@@ -78,10 +78,7 @@ SMODS.Joker{ --Tricky tracks
                         return true
                     end,
                     colour = G.C.BLUE,
-                    extra = {
-                        return{
-                         Xmult = card.ability.extra.mult
-                        }
+                    Xmult = card.ability.extra.mult
                     }
                 }
             }
