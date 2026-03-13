@@ -11,8 +11,8 @@ SMODS.Joker{ --Cave Monkey
         }
     },
     pos = {
-        x = 9,
-        y = 0
+        x = 1,
+        y = 6
     },
     display_size = {
         w = 71 * 1, 
