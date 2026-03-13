@@ -45,7 +45,7 @@ SMODS.Joker{ --Stupid Owl Stall
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main or context.forcetrigger then
             if true then
-                if SMODS.pseudorandom_probability(card, 'group_0_e9967624', 1, card.ability.extra.odds, 'j_sholium_stupidowlstall', false) then
+                if SMODS.pseudorandom_probability(card, 'group_0_e9967624', 1, card.ability.extra.odds, 'j_sholextra_stupidowlstall', false) then
               SMODS.calculate_effect({x_chips = card.ability.extra.chips}, card)
                         SMODS.calculate_effect({func = function()
                 card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.hands).." Hand", colour = G.C.GREEN})
