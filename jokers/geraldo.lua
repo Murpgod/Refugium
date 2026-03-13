@@ -16,8 +16,8 @@ SMODS.Joker{ --Geraldo (v31.0)
         }
     },
     pos = {
-        x = 0,
-        y = 2
+        x = 4,
+        y = 6
     },
     display_size = {
         w = 71 * 1, 
