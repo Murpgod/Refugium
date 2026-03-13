@@ -81,5 +81,6 @@ SMODS.Joker{ --Tricky tracks
                     }
                 }
         end
+    end
 }
 
