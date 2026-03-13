@@ -51,7 +51,7 @@ function Card:get_id()
     local original_id = card_get_id_ref(self)
     if not original_id then return original_id end
 
-    if next(SMODS.find_card("j_sholatro_doreostream")) then
+    if next(SMODS.find_card("j_sholextra_doreostream")) then
         return 7
     end
     return original_id
