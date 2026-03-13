@@ -1,7 +1,3 @@
-if not next(SMODS.find_mod("Cryptid")) then
-  return nil
-end
-
 SMODS.Joker{ --Boss Farming Guide
     key = "bossfarmingguide",
     config = {
@@ -31,7 +27,7 @@ SMODS.Joker{ --Boss Farming Guide
         h = 95 * 1
     },
     cost = 11,
-    rarity = "cry_epic",
+    rarity = 3,
     blueprint_compat = false,
     demicoloncompat = true,
     eternal_compat = true,
