@@ -38,7 +38,7 @@ SMODS.Joker{ --Piglin
             if (function()
                 local count = 0
                 for _, playing_card in pairs(context.scoring_hand or {}) do
-                    if playing_card.enchancement and playing_card.enhancement.key == "gold" then
+                    if playing_card.enchancement and playing_card.enhancement.key == "k_gold" then
                         count = count + 1
                     end
                 end
