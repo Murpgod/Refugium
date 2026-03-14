@@ -460,6 +460,16 @@ return {
 					"產生一個{C:dark_edition}負片{}{C:spectral,E:1}Shol理元素{}",
 				},
 			},
+			j_sholextra_trickytracks = {
+				name = "棘手路徑",
+				text = {
+					"若打出的牌型為{C:attention}三條{}，",
+					"{X:red,C:white}X倍率{}成長一次",
+					"成長速率取決於當前{X:red,C:white}X倍率{}",
+					"與{X:red,C:white}X3{}倍率的距離",
+					"{C:inactive}(當前{}{X:red,C:white}X#1#{}{C:inactive}倍率，下次成長{}{X:red,C:white}+#2#{}{C:inactive}){}"
+				},
+			},
 			j_sholextra_virus = {
 				name = "病毒",
 				text = {
