@@ -413,7 +413,7 @@ return {
 			},
 			j_sholextra_shiniestaward = {
 				text = {
-					"至少打出{C:attention}#1#{}次牌後{C:red}+2000000{}倍率,
+					"至少打出{C:attention}#1#{}次牌後{C:red}+2000000{}倍率",
 					"{C:inactive}(#2#/#1#){}",
 				},
 			},
