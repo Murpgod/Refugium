@@ -30,11 +30,14 @@ SMODS.Joker{ --Nahuatl Joker
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'Joker',
-    pools = { ["modprefix_sholiumx_jokers"] = true },
+    atlas = 'CustomJokers',
     
     calculate = function(self, card, context)
-        if context.cardarea == G.jokers and context.joker_main  then
+        if context.after and context.cardarea == G.jokers and to_big(#context.full_hand) == to_big(3) then
+          for i = 1, #G.playing_card do
+            G.E_MANAGER:add_event(Event({
+            assert(SMODS.modify_rank(G.playing_card[i], -1)
+            end
         end
     end
 }
