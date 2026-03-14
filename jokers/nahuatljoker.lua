@@ -8,7 +8,7 @@ SMODS.Joker{ --Nahuatl Joker
     loc_txt = {
         ['name'] = 'Nahuatl Joker',
         ['text'] = {
-            [1] = '{C:attention}-1{} rank of each {C:attention}played{} card',
+            [1] = '{C:attention}-1{} rank of each {C:attention}scored{} card',
             [2] = 'if played hand is exactly {C:attention}3{} cards'
         },
         ['unlock'] = {
