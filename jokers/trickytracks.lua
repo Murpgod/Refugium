@@ -58,6 +58,7 @@ SMODS.Joker{ --Tricky tracks
                         end,
                         colour = G.C.BLUE
                     }
+                    message = "Upgrade!"
                 }
             end
         end
@@ -79,6 +80,7 @@ SMODS.Joker{ --Tricky tracks
                     end,
                     colour = G.C.BLUE
                     }
+                    message = "Upgrade!"
                 }
         end
     end
