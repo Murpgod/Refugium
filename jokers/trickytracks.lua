@@ -51,6 +51,7 @@ SMODS.Joker{ --Tricky tracks
                         card.ability.extra.mult = lenient_bignum(card.ability.extra.mult) + lenient_bignum(card.ability.extra.scale)
                         return true
                     end,
+                    message = "Upgrade!"
                     extra = {
                         func = function()
                             card.ability.extra.scale = lenient_bignum((3 - card.ability.extra.mult) * 0.1 + 0.1)
@@ -58,7 +59,6 @@ SMODS.Joker{ --Tricky tracks
                         end,
                         colour = G.C.BLUE
                     }
-                    message = "Upgrade!"
                 }
             end
         end
@@ -73,6 +73,7 @@ SMODS.Joker{ --Tricky tracks
                         card.ability.extra.mult = lenient_bignum(card.ability.extra.mult) + lenient_bignum(card.ability.extra.scale)
                         return true
                 end,
+                message = "Upgrade!"
                 extra = {
                     func = function()
                         card.ability.extra.scale = lenient_bignum(math.abs(3 - card.ability.extra.mult) * 0.1 + 0.1)
@@ -80,7 +81,6 @@ SMODS.Joker{ --Tricky tracks
                     end,
                     colour = G.C.BLUE
                     }
-                    message = "Upgrade!"
                 }
         end
     end
