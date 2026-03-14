@@ -35,6 +35,7 @@ SMODS.Joker{ --Piglin
     
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main then
+          if SMODS.get_enhancements(context.other_card)["m_gold"] == true then
             for i = 1, math.min(1, G.consumeables.config.card_limit - #G.consumeables.cards) do
                 G.E_MANAGER:add_event(Event({
                     trigger = 'after',
@@ -51,6 +52,7 @@ SMODS.Joker{ --Piglin
             return {
                 message = created_consumable and localize('k_plus_tarot') or nil
             }
+            end
         end
         if context.forcetrigger then
             for i = 1, math.min(1, G.consumeables.config.card_limit - #G.consumeables.cards) do
