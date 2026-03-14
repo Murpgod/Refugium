@@ -31,7 +31,7 @@ SMODS.Joker{ --Piglin
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'Joker',
+    atlas = 'CustomJokers',
     
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main then
