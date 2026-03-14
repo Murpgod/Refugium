@@ -33,12 +33,16 @@ SMODS.Joker{ --Nahuatl Joker
     atlas = 'CustomJokers',
     
     calculate = function(self, card, context)
-        if context.after and context.cardarea == G.jokers and to_big(#context.full_hand) == to_big(3) then
-          for i = 1, #G.playing_card do
+      if context.after and context.cardarea == G.jokers and to_big(#context.full_hand) == to_big(3) then
+       if context.individual and context.cardarea == G.play then
+            local scored_card = context.other_card
             G.E_MANAGER:add_event(Event({
-            assert(SMODS.modify_rank(G.playing_card[i], -1))
+                func = function()
+                    assert(SMODS.modify_rank(scored_card, nil, -1))
+                    return true
+                end
             }))
-            end
         end
+       end
     end
 }
