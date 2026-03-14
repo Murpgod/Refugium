@@ -31,6 +31,12 @@ return {
 					"的{C:blue}籌碼{}{C:inactive}(+380){}",
 				},
 			},
+			j_sholextra_ancientmeme = {
+				text = {
+					"商店重骰時",
+					"{X:attention,C:dark_edition}=$939{}",
+				},
+			},
 			j_sholextra_bacteria = {
 				name = "細菌",
 				text = {
@@ -138,11 +144,20 @@ return {
 					"然後將{X:red,C:white}X倍率{}數值提升{X:red,C:white}+#2#{}",
 				},
 			},
+			j_sholextra_cavemonkey = {
+				name = "洞穴猴",
+			},
 			j_sholextra_corvus = {
 				name = "耐削王牢科 (v43-48)",
 				text = {
 					"每{C:attention}3{}次出牌產生一張{C:spectral}火祭{}",
 					"{C:inactive}剩餘#1#次{}",
+				},
+			},
+			j_sholextra_doreostream = {
+				name = "Doreo直播",
+				text = {
+					"所有牌點數均視為{C:attention}7{}",
 				},
 			},
 			j_sholextra_ezili = {
@@ -203,6 +218,21 @@ return {
 				text = {
 					"每回合第一次出牌",
 					"{C:blue}+700{}籌碼",
+				},
+			},
+			j_sholextra_geraldo = {
+				name = "杰拉爾多(v31.0)",
+				text = {
+					"商店重骰時產生一個隨機標籤",
+					"{C:inactive}Ah yes 一般稀有度{}",
+				},
+			},
+			j_sholextra_horseboard = {
+				name = "Horseboard",
+				text = {
+					"{C:dark_edition}Bloonlatro discord{} horseboard 討論串中",
+					"每有一個{C:attention}:horse:{}反應{X:red,C:white}X1{}倍率",
+					"{C:inactive}(當前{}{X:red,C:white}X8{}{C:inactive}倍率){}"
 				},
 			},
 			j_sholextra_iciclez = {
@@ -289,6 +319,12 @@ return {
 					"{C:inactive}big monke{}",
 				},
 			},
+			j_sholextra_ploone = {
+				text = {
+					"在結束商店後產生",
+					"一隻{C:dark_edition}負片{}{C:attention}幸運貓{}"
+				},
+			},
 			j_sholextra_popandawe = {
 				name = "爆炸中請仰視(v39)",
 				text = {
@@ -367,6 +403,18 @@ return {
 					"一張其他花色的牌，",
 					"這張小丑獲得{X:legendary,C:white}^#2#{}倍率",
 					"{C:inactive}(目前{}{X:legendary,C:white}^#1#{}{C:inactive}倍率){}",
+				},
+			},
+			j_sholextra_sheppi = {
+				text = {
+					"打出的{C:hearts}愛心{}被計分時，{X:blue,C:white}X#1#{}籌碼",
+					"然後將{X:blue,C:white}X籌碼{}數值提升{X:blue,C:white}+#2#{}",
+				},
+			},
+			j_sholextra_shiniestaward = {
+				text = {
+					"至少打出{C:attention}#1#{}次牌後{C:red}+2000000{}倍率,
+					"{C:inactive}(#2#/#1#){}",
 				},
 			},
 			j_sholextra_squalch = {
