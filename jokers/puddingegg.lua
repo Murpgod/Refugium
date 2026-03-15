@@ -53,5 +53,3 @@ SMODS.Joker{ --Pudding Egg
         end
     end
 }
-
-end
