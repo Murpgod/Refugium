@@ -1,4 +1,4 @@
-SMODS.Joker{ --Glaive Lord (v48+)
+SMODS.Joker{ --Glaive Lord
     key = "glaivelord",
     config = {
         extra = {
