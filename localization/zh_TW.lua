@@ -265,7 +265,7 @@ return {
 			j_sholextra_megalodon = {
 				name = "巨齒鯊",
 				text = {
-					"當{C:red}倍率牌{}/{C:blue}獎勵牌{}計分時，",
+					"這張小丑在{C:red}倍率牌{}/{C:blue}獎勵牌{}被計分時，",
 					"分別獲得{X:red,C:white}X#3#{}倍率/{X:blue,C:white}X#3#{}籌碼",
 					"{C:inactive}(目前{}{X:red,C:white}X#1#{}{C:inactive}倍率，{}{X:blue,C:white}X#2#{}{C:inactive}籌碼){}",
 				},
