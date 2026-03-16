@@ -54,6 +54,7 @@ SMODS.Joker{ --Water Tower
                 return false
             end)() then
                 return {
+                    message = "Upgrade!",
                     func = function()
                         card.ability.extra.mult = (card.ability.extra.mult) + card.ability.extra.multmod
                         return true
