@@ -35,7 +35,7 @@ SMODS.Joker{ --Prion
     atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)
-        local new_numerator, new_denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_sholium_prion') 
+        local new_numerator, new_denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_sholextra_prion') 
         return {vars = {new_numerator, new_denominator}}
     end,
 
