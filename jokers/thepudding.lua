@@ -70,7 +70,7 @@ SMODS.Joker{ --The Pudding
     
     loc_vars = function(self, info_queue, card)
         
-        return {vars = FormatArrowMult(card.ability.extra.operator, card.ability.extra.mult)}
+        return {vars = {FormatArrowMult(card.ability.extra.operator, card.ability.extra.mult)}}
     end,
     
     calculate = function(self, card, context)
