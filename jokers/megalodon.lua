@@ -11,9 +11,9 @@ SMODS.Joker{ --Megalodon
     loc_txt = {
         ['name'] = 'Megalodon',
         ['text'] = {
-            [1] = 'When a {C:red}Mult Card{}/{C:blue}Bonus Card{}',
+            [1] = 'When a {C:red}Mult Card{} / {C:blue}Bonus Card{}',
             [2] = 'is scored, this Joker gains',
-            [3] = '{X:red,C:white}X#3#{} Mult/{X:blue,C:white}X#3#{} Chips respectively',
+            [3] = '{X:red,C:white}X#3#{} Mult / {X:blue,C:white}X#3#{} Chips respectively',
             [4] = '{C:inactive}(Currently{} {X:red,C:white}X#1#{}{C:inactive} Mult, {}{X:blue,C:white}X#2#{}{C:inactive} Chips){}',
             [5] = '{C:inactive}Art by 1.2m^2 Fungus Room{}'
         },
