@@ -1,23 +1,19 @@
 
 SMODS.Joker{ --Red Sauda
     key = "redsauda",
-    config = {
-        extra = {
-        }
-    },
     loc_txt = {
         ['name'] = 'Red Sauda',
         ['text'] = {
             [1] = 'Swaps {C:blue}Chips{} and {C:red}Mult{}',
-            [2] = 'before scoring'
+            [2] = 'before hand starts scoring'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 2,
+        y = 7
     },
     display_size = {
         w = 71 * 1, 
@@ -26,15 +22,20 @@ SMODS.Joker{ --Red Sauda
     cost = 5,
     rarity = 1,
     blueprint_compat = true,
+    demicoloncompat = true,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'Joker',
-    pools = { ["modprefix_sholiumx_jokers"] = true },
+    atlas = 'CustomJokers',
     
     calculate = function(self, card, context)
-        if context.before and context.cardarea == G.jokers  then
+        if context.before and context.cardarea == G.jokers then
+            return {
+                swap = true
+            }
+        end
+        if context.forcetrigger then
             return {
                 swap = true
             }
