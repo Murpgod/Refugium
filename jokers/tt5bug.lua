@@ -19,7 +19,7 @@ SMODS.Joker{ --tt5
         }
     },
     pos = {
-        x = 3,
+        x = 4,
         y = 7
     },
     display_size = {
