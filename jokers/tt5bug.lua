@@ -47,21 +47,22 @@ SMODS.Joker{ --tt5
                 end
             end
             if left_joker and context.other_hand == left_joker then
-			for i = 1, #G.jokers.cards do
-				if G.jokers.cards[i] == card then
-					if Cryptid.demicolonGetTriggerable(G.jokers.cards[i + 1])[1] then
-						local results = Cryptid.forcetrigger(G.jokers.cards[i + 1], context)
-						if results and results.jokers then
-							results.jokers.message = localize("cry_demicolon")
-							results.jokers.colour = G.C.RARITY.cry_epic
-							results.jokers.sound = "cry_demitrigger"
-							return results.jokers
+			    for i = 1, #G.jokers.cards do
+				    if G.jokers.cards[i] == card then
+					    if Cryptid.demicolonGetTriggerable(G.jokers.cards[i + 1])[1] then
+						    local results = Cryptid.forcetrigger(G.jokers.cards[i + 1], context)
+						    if results and results.jokers then
+							    results.jokers.message = localize("cry_demicolon")
+							    results.jokers.colour = G.C.RARITY.cry_epic
+							    results.jokers.sound = "cry_demitrigger"
+							    return results.jokers
+						    end
+						    return {
+							    message = localize("cry_demicolon"),
+							    colour = G.C.RARITY.cry_epic,
+							    sound = "cry_demitrigger",
+						    }
 						end
-						return {
-							message = localize("cry_demicolon"),
-							colour = G.C.RARITY.cry_epic,
-							sound = "cry_demitrigger",
-						}
 					end
 				end
 			end
