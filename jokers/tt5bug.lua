@@ -40,7 +40,7 @@ SMODS.Joker{ --tt5
         if context.post_trigger then
             local left_joker = nil
             for k, v in ipairs(G.jokers.cards) do
-                if v == cards then
+                if v == card then
                     if k > 1 then
                         left_joker = G.jokers.cards[k - 1]
                     end
