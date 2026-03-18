@@ -2,7 +2,7 @@
 SMODS.Joker{ --Red Sauda
     key = "redsauda",
     loc_txt = {
-        ['name'] = 'Red Sauda',
+        ['name'] = 'Red Sauda (v46+)',
         ['text'] = {
             [1] = 'Swap {C:blue}Chips{} and {C:red}Mult{}',
             [2] = 'when the {C:attention}first{} played',
