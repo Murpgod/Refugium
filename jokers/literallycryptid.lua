@@ -1,10 +1,6 @@
 
 SMODS.Joker{ --Literally Cryptid
     key = "literallycryptid",
-    config = {
-        extra = {
-        }
-    },
     loc_txt = {
         ['name'] = 'Literally Cryptid',
         ['text'] = {
@@ -17,8 +13,8 @@ SMODS.Joker{ --Literally Cryptid
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 3,
+        y = 7
     },
     display_size = {
         w = 71 * 1, 
@@ -31,8 +27,7 @@ SMODS.Joker{ --Literally Cryptid
     perishable_compat = true,
     unlocked = true,
     discovered = true,
-    atlas = 'Joker',
-    pools = { ["modprefix_sholiumx_jokers"] = true },
+    atlas = 'CustomJokers',
     
     calculate = function(self, card, context)
         if context.cardarea == G.jokers and context.joker_main  and not context.blueprint then
