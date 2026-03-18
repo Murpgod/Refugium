@@ -30,7 +30,7 @@ SMODS.Joker{ --Red Sauda
     atlas = 'CustomJokers',
     
     calculate = function(self, card, context)
-        if context.before and context.cardarea == G.jokers then
+        if context.before then
             return {
                 swap = true
             }
