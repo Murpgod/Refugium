@@ -9,11 +9,10 @@ SMODS.Joker{ --tt5
         }
     },
     loc_txt = {
-        ['name'] = 'Total transformation - Quantum Entanglement (v38)',
+        ['name'] = 'Total transformation bug (v38)',
         ['text'] = {
             [1] = '{C:attention}Force-trigger{} Joker to the {C:attention}right{}',
-            [2] = 'when Joker to the {C:attention}left{}',
-            [3] = 'is triggered'
+            [2] = 'when Joker to the {C:attention}left{} is triggered',
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
