@@ -138,7 +138,7 @@ return {
 				},
 			},
 			j_sholextra_clubism = {
-				name = "藍月光",
+				name = "梅花精神",
 				text = {
 					"打出的{C:clubs}梅花{}被計分時，{X:red,C:white}X#1#{}倍率",
 					"然後將{X:red,C:white}X倍率{}數值提升{X:red,C:white}+#2#{}",
@@ -163,7 +163,6 @@ return {
 			j_sholextra_ezili = {
 				name = "巫毒法師",
 				text = {
-					"若為{C:attention}大盲注{}或{C:attention}Boss盲注{}，",
 					"{C:purple}平衡{}{C:blue}籌碼{}和{C:red}倍率{}",
 				},
 			},
@@ -260,6 +259,14 @@ return {
 				text = {
 					"若牌型包含{C:attention}五條{}或{C:attention}同花葫蘆{}",
 					"重新觸發打出的牌{C:attention}六次{}",
+				},
+			},
+			j_sholextra_literallycryptid = {
+				name = "很神秘的生物",
+				text = {
+					"若打出剛好{C:attention}1{}張牌",
+					"產生{C:attention}2{}張打出牌的複製牌",
+					"並{C:red}自我摧毀{}",				
 				},
 			},
 			j_sholextra_megalodon = {
@@ -404,6 +411,13 @@ return {
 					"{C:inactive}不是，這不是綠色的吧...{}",
 				},
 			},
+			j_sholextra_redsauda = {
+				name = "紅色蘇打(v46)",
+				text = {
+					"{C:attention}第1張{}打出的牌計分時",
+					"交換{C:blue}籌碼{}和{C:red}倍率{}",
+ 				},
+			},
 			j_sholextra_rosalia = {
 				name = "小橘子(v43)",
 				text = {
@@ -500,6 +514,13 @@ return {
 					"成長速率取決於當前{X:red,C:white}X倍率{}",
 					"與{X:red,C:white}X3{}倍率的距離",
 					"{C:inactive}(當前{}{X:red,C:white}X#1#{}{C:inactive}倍率，下次成長{}{X:red,C:white}+#2#{}{C:inactive}){}"
+				},
+			},
+			j_sholextra_tt5bug = {
+				name = "量子糾纏(v38)",
+				text = {
+					"{C:attention}左邊{}的小丑結算時",
+					"{C:attention}強制觸發右邊{}的小丑",
 				},
 			},
 			j_sholextra_virus = {
