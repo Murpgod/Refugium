@@ -34,6 +34,7 @@ SMODS.Joker{ --tt5
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+	soul_pos = { x = 5, y = 7, extra = { x = 6, y = 7 } },
     
     calculate = function(self, card, context)
         if context.post_trigger then
