@@ -65,8 +65,7 @@ SMODS.Joker{ --Piglin
                 }
             end
         end
-    end
-    if context.forcetrigger then
+        if context.forcetrigger then
             for i = 1, math.min(1, G.consumeables.config.card_limit - #G.consumeables.cards) do
                 G.E_MANAGER:add_event(Event({
                     trigger = 'after',
@@ -79,5 +78,5 @@ SMODS.Joker{ --Piglin
                     end
                 }))
             end
-    end
+        end
 }
