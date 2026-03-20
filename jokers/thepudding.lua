@@ -95,7 +95,8 @@ SMODS.Joker{ --The Pudding
                     func = function()
                         card.ability.extra.operator = (card.ability.extra.operator) + 1
                         return true
-                    end
+                    end,
+                    message = localize('k_upgrade_ex')
                 }
             end
         end
