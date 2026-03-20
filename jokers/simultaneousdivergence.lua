@@ -97,6 +97,7 @@ end)() or (function()
     return suitCount >= 1
 end)())) then
                 return {
+                    message = localize('k_upgrade_ex'),
                     func = function()
                     card.ability.extra.mult = (card.ability.extra.mult) + card.ability.extra.scale
                     return true
