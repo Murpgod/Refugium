@@ -7,7 +7,7 @@
   "description": "sholium with extra stuff",
   "prefix": "sholextra",
   "main_file": "main.lua",
-  "version": "2.5.6a",
+  "version": "2.6.0dev",
   "priority": 2026,
   "badge_colour": "228922",
   "badge_text_colour": "FFFFFF",
