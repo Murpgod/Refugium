@@ -34,26 +34,18 @@ SMODS.Joker{ --Literally The Soul
     atlas = 'CustomJokers',
     
     calculate = function(self, card, context)
-        if (context.card_being_destroyed and context.card == card) or context.forcetrigger then
-            return {
-                func = function()
-                    local created_joker = true
-                    G.E_MANAGER:add_event(Event({
-                        func = function()
-                            local joker_card = SMODS.add_card({ set = 'Joker', rarity = 'Legendary' })
-                            if joker_card then
-                            end
-                            
-                            return true
-                        end
-                    }))
-                    
-                    if created_joker then
-                        card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = localize('k_plus_joker'), colour = G.C.BLUE})
-                    end
-                    return true
-                end
-            }
+        if context.selling_self then card.ability.no_destroy = true end
+        if context.card_being_destroyed and context.card == card then
+            card_eval_status_text(
+                self,
+                "extra",
+                nil,
+                nil,
+                nil,
+            )
+            local c = create_card("Joker", G.jokers, nil, "Legendary")
+            c:add_to_deck()
+            G.jokers:emplace(c)
         end
     end
 }
