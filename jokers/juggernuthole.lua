@@ -10,7 +10,7 @@ SMODS.Joker{ --Jugger nut Hole
         ['text'] = {
             [1] = 'If played hand contains',
             [2] = '{C:attention}Five of a Kind{} or {C:attention}Flush House{},',
-            [3] = '{C:attention}Retrigger{} all played cards {C:attention}6{} times'
+            [3] = '{C:attention}Retrigger{} all played cards {C:attention}#1#{} times'
         },
         ['unlock'] = {
             [1] = ''
@@ -40,6 +40,11 @@ SMODS.Joker{ --Jugger nut Hole
           )
           and true
       end,
+
+    loc_vars = function(self, info_queue, card)
+
+        return {vars = {card.ability.extra.repetitions}}
+    end,
 
     calculate = function(self, card, context)
         if context.repetition and context.cardarea == G.play  then
