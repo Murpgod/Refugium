@@ -1,5 +1,5 @@
 
-SMODS.Joker{ --Avenger (v52)
+SMODS.Joker{ --Avrejer
     key = "avenger",
     config = {
     },
