@@ -10,8 +10,8 @@ SMODS.Joker{ --Giganotosaurus
     loc_txt = {
         ['name'] = 'Giganotosaurus',
         ['text'] = {
-            [1] = '{X:red,C:white}X6{} Mult',
-            [2] = '{C:blue}-2{} hands',
+            [1] = '{X:red,C:white}X#2#{} Mult',
+            [2] = '{C:blue}-#1#{} hands',
             [3] = 'when a hand is played'
         },
         ['unlock'] = {
@@ -35,6 +35,11 @@ SMODS.Joker{ --Giganotosaurus
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    
+    loc_vars = function(self, info_queue, card)
+
+        return {vars = {card.ability.extra.hands, card.ability.extra.Xmult}}
+    end,
 
     calculate = function(self, card, context)
         if context.before and context.cardarea == G.jokers  and not context.blueprint then
