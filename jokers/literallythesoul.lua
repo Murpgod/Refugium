@@ -45,7 +45,7 @@ SMODS.Joker{ --Literally The Soul
                 nil,
                 {}
             )
-            local c = create_card("Joker", G.jokers, nil, "Legendary")
+            local c = create_card("Joker", G.jokers, nil, 4)
             c:add_to_deck()
             G.jokers:emplace(c)
         end
