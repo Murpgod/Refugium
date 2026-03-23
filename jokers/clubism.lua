@@ -51,8 +51,8 @@ SMODS.Joker{ --Clubism
                 return count >= 1
             end)() then
                 local target_hand = (context.scoring_name or "High Card")
-                level_up_hand(card, target_hand, true, 1)
                 return {
+                    level_up = true,
                     message = localize('k_level_up_ex')
                 }
             end
