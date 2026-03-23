@@ -29,7 +29,7 @@ SMODS.Joker{ --Clubism
     perishable_compat = false,
     unlocked = true,
     discovered = true,
-    atlas = 'Joker',
+    atlas = 'CustomJokers',
     in_pool = function(self, args)
         return (
             not args 
