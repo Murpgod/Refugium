@@ -81,6 +81,7 @@ SMODS.Joker{ --Overclock
         end
         if context.forcetrigger then
             return {
+                e_mult = lenient_bignum(math.floor(math.log(math.max((10 * (G.GAME.dollars or 0)),10))))
                 func = function()
                     local created_joker = true
                     G.E_MANAGER:add_event(Event({
@@ -99,9 +100,6 @@ SMODS.Joker{ --Overclock
                         card_eval_status_text(context.blueprint_card or card, 'extra', nil, nil, nil, {message = localize('k_plus_joker'), colour = G.C.BLUE})
                     end
                     return true
-                    extra = {
-                    e_mult = lenient_bignum(math.floor(math.log(math.max((10 * (G.GAME.dollars or 0)),10))))
-                    }
                 end
             }
     end
