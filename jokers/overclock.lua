@@ -82,6 +82,7 @@ SMODS.Joker{ --Overclock
         if context.forcetrigger then
             return {
                 e_mult = lenient_bignum(math.floor(math.log(math.max((10 * (G.GAME.dollars or 0)),10)))),
+                extra = {
                 func = function()
                     local created_joker = true
                     G.E_MANAGER:add_event(Event({
@@ -101,6 +102,7 @@ SMODS.Joker{ --Overclock
                     end
                     return true
                 end
+              }
             }
         end
     end
