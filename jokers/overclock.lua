@@ -14,6 +14,7 @@ SMODS.Joker{ --Overclock
             [3] = 'at the end of {C:green}shop{}',
             [4] = '{X:legendary,C:white}^1{} Mult for every digit',
             [5] = 'of money you currently have'
+            [6] = '{C:inactive}(Currently {}{X:legendary,C:white}^#1#{}{C:inactive} Mult){}'
         },
         ['unlock'] = {
             [1] = ''
@@ -81,7 +82,10 @@ SMODS.Joker{ --Overclock
         end
         if context.forcetrigger then
             return {
-                e_mult = lenient_bignum(math.floor(math.log(math.max((10 * (G.GAME.dollars or 0)),10)))),
+                func = function()
+                    e_mult = lenient_bignum(math.floor(math.log(math.max((10 * (G.GAME.dollars or 0)),10))))
+                    return true
+                end,
                 extra = {
                 func = function()
                     local created_joker = true
