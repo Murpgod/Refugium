@@ -76,7 +76,7 @@ SMODS.Joker{ --Overclock
         end
         if context.cardarea == G.jokers and context.joker_main  then
             return {
-                e_mult = lenient_bignum(math.floor(math.log(math.max((10 * (G.GAME.dollars or 0)),10)))
+                e_mult = lenient_bignum(math.floor(math.log(math.max((10 * (G.GAME.dollars or 0)),10))))
             }
         end
         if context.forcetrigger then
