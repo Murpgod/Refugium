@@ -38,10 +38,11 @@ return {
 				},
 			},
 			j_sholextra_avenger = {
+				name = "復仇者",
 				text = {
 					"若打出的牌型本回合打出過，",
 					"本回合{C:blue}+1{}出牌次數",
-					"Ah yes一般稀有度(二周目)",
+					"{C:inactive}Ah yes 一般稀有度(二周目){}",
 				},
 			},
 			j_sholextra_bacteria = {
