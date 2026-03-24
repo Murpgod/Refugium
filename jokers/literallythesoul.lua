@@ -27,7 +27,7 @@ SMODS.Joker{ --Literally The Soul
     cost = 8,
     rarity = 3,
     blueprint_compat = false,
-    demicolon_compat = true,
+    demicoloncompat = true,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
