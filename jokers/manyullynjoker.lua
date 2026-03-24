@@ -14,7 +14,7 @@ SMODS.Joker{ --Manyullyn Joker
         ['name'] = 'Manyullyn Joker',
         ['text'] = {
             [1] = 'When each played card is scored,',
-            [2] = '{X:red,C:white}X#1#{} Mult and increasethis by {X:red,C:white}#2#{}',
+            [2] = '{X:red,C:white}X#1#{} Mult and increase this by {X:red,C:white}#2#{}',
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
