@@ -24,7 +24,7 @@ SMODS.Joker{ --Piglin
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 6,
+    cost = 3,
     rarity = 1,
     blueprint_compat = true,
     demicoloncompat = true,
