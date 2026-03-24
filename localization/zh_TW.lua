@@ -37,6 +37,13 @@ return {
 					"{X:attention,C:dark_edition}=$939{}",
 				},
 			},
+			j_sholextra_avenger = {
+				text = {
+					"若打出的牌型本回合打出過，",
+					"本回合{C:blue}+1{}出牌次數",
+					"Ah yes一般稀有度(二周目)",
+				},
+			},
 			j_sholextra_bacteria = {
 				name = "細菌",
 				text = {
@@ -140,12 +147,26 @@ return {
 			j_sholextra_clubism = {
 				name = "梅花精神",
 				text = {
-					"打出的{C:clubs}梅花{}被計分時，{X:red,C:white}X#1#{}倍率",
-					"然後將{X:red,C:white}X倍率{}數值提升{X:red,C:white}+#2#{}",
+					"若打出的牌包含一張計分的{C:clubs}梅花{}，",
+					"升級打出的牌型",
 				},
 			},
 			j_sholextra_cavemonkey = {
 				name = "洞穴猴",
+			},
+			j_sholextra_cobaltjoker = {
+				name = "鈷小丑",
+				text = {
+					"{C:attention}重新觸發{}右邊的小丑",
+				},
+			},
+			j_sholextra_copperjoker = {
+				name = "銅小丑",
+				text = {
+					"每個剩餘的出牌次數",
+					"提供{X:red,C:white}X#1#{}倍率",
+					"{C:inactive}(目前{}{X:red,C:white}X#2#{}{C:inactive}倍率){}",
+				},
 			},
 			j_sholextra_corvus = {
 				name = "耐削王牢科 (v43-48)",
@@ -171,8 +192,8 @@ return {
 				text = {
 					"每張閃卡提供{X:red,C:white}X#1#{}倍率",
 					"當{C:green}商店{}被重骰時，",
-					"產生一張{C:dark_edition}負片{}{C:attention}閃卡{}",
-					"然後將{X:red,C:white}X倍率{}數值提升{X:red,C:white}+2{}",
+					"產生一張{C:attention}閃卡{}",
+					"然後將{X:red,C:white}X倍率{}數值提升{X:red,C:white}+0.5{}",
 				},
 			},
 			j_sholextra_freedartmonkey = {
@@ -226,6 +247,14 @@ return {
 					"{C:inactive}Ah yes 一般稀有度{}",
 				},
 			},
+			j_sholextra_hepatizonjoker = {
+				name = "黑色科林斯青銅小丑",
+				text = {
+					"重新觸發所有打出的牌{C:attention}#1#{}次，",
+					"每連續打出{C:attention}4{}次包含順子的牌型",
+					"重新觸發次數{C:attention}+1{} {C:inactive}(#2#/4){}",
+				},
+			},
 			j_sholextra_horseboard = {
 				name = "Horseboard",
 				text = {
@@ -269,6 +298,21 @@ return {
 					"並{C:red}自我摧毀{}",				
 				},
 			},
+			j_sholextra_literallythesoul = {
+				name = "有靈魂的靈魂",
+				text = {
+					"{C:attention}Boss盲注{}被擊敗時，",
+					"產生一張{C:legendary}傳奇{}小丑",
+					"並{C:red}自我摧毀{}",				
+				},
+			},
+			j_sholextra_manyullynjoker = {
+				name = "瑪玉靈小丑",
+				text = {
+					"打出的牌被計分時，{X:red,C:white}X#1#{}倍率",
+					"然後將{X:red,C:white}X倍率{}數值提升{X:red,C:white}+#2#{}",
+				},
+			},
 			j_sholextra_megalodon = {
 				name = "巨齒鯊",
 				text = {
@@ -286,8 +330,10 @@ return {
 			j_sholextra_nahuatljoker = {
 				name = "納瓦特爾小丑",
 				text = {
-					"若打出剛好{C:attention}3{}張牌",
-					"其中所有{C:attention}得分{}的牌{C:attention}-1{}點數",
+					"若剛好打出{C:attention}3{}張牌",
+					"打出的牌{C:attention}計分{}時{C:attention}-1{}點數",
+					"並為這張小丑提供{C:mult}+#1#{}倍率",
+					"{C:inactive}(目前{}{C:red}+#2#{}{C:inactive}倍率){}",
 				},
 			},
 			j_sholextra_neuraxworm = {
@@ -416,6 +462,15 @@ return {
 				text = {
 					"{C:attention}第1張{}打出的牌計分時",
 					"交換{C:blue}籌碼{}和{C:red}倍率{}",
+ 				},
+			},
+			j_sholextra_ripchamp = {
+				name = "激流鬥士(v52)",
+				text = {
+					"打出的牌計分時，",
+					"這張小丑獲得{X:blue,C:white}X#1#{}籌碼",
+					"回合結束時{C:attention}重置{}",
+					"{C:inactive}(目前{}{X:blue,C:white}X#2#{}{C:inactive}籌碼){}",
  				},
 			},
 			j_sholextra_rosalia = {
