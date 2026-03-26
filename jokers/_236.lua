@@ -18,8 +18,8 @@ SMODS.Joker{ --2+3=6
         }
     },
     pos = {
-        x = 5,
-        y = 0
+        x = 7,
+        y = 8
     },
     display_size = {
         w = 71 * 1, 
