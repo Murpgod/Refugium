@@ -16,8 +16,8 @@ SMODS.Joker{ --Hexalia crashout
         }
     },
     pos = {
-        x = 0,
-        y = 0
+        x = 8,
+        y = 5
     },
     display_size = {
         w = 71 * 1, 

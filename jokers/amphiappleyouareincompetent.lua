@@ -16,8 +16,8 @@ SMODS.Joker{ --@amphiapple you are incompetent
         }
     },
     pos = {
-        x = 1,
-        y = 0
+        x = 2,
+        y = 4
     },
     display_size = {
         w = 71 * 1, 

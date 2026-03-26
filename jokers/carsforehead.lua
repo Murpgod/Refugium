@@ -20,7 +20,7 @@ SMODS.Joker{ --Cars forehead
     },
     pos = {
         x = 4,
-        y = 0
+        y = 8
     },
     display_size = {
         w = 71 * 1, 
