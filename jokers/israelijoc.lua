@@ -18,8 +18,8 @@ SMODS.Joker{ --israeli joc
         }
     },
     pos = {
-        x = 3,
-        y = 0
+        x = 6,
+        y = 8
     },
     display_size = {
         w = 71 * 1, 
