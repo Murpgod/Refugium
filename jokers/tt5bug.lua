@@ -1,6 +1,4 @@
-if not next(SMODS.find_mod("Cryptid")) then
-  return nil
-end
+if Cryptid then
 
 SMODS.Joker{ --tt5
     key = "tt5bug",
@@ -26,8 +24,8 @@ SMODS.Joker{ --tt5
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 50,
-    rarity = "cry_exotic",
+    cost = 30,
+    rarity = "sholextra_peculiar",
     blueprint_compat = false,
     eternal_compat = true,
     perishable_compat = true,
@@ -61,3 +59,4 @@ SMODS.Joker{ --tt5
         end
     end
 }
+end
