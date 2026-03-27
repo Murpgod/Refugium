@@ -16,8 +16,8 @@ SMODS.Joker{ --Doreo Guide
         }
     },
     pos = {
-        x = 3,
-        y = 1
+        x = 9,
+        y = 8
     },
     display_size = {
         w = 71 * 1, 
@@ -25,9 +25,9 @@ SMODS.Joker{ --Doreo Guide
     },
     cost = 1,
     rarity = 1,
-    blueprint_compat = true,
-    eternal_compat = true,
-    perishable_compat = true,
+    blueprint_compat = false,
+    eternal_compat = false,
+    perishable_compat = false,
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers'
