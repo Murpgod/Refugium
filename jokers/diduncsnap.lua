@@ -45,7 +45,7 @@ SMODS.Joker{ --Did Unc Snap
             context.selling_card or context.ending_shop or context.starting_shop or 
             context.ending_booster or context.skipping_booster or context.open_booster or
             context.skip_blind or context.before or context.pre_discard or context.setting_blind or
-        context.using_consumeable)   then
+        context.using_consumeable or context.post_trigger)   then
             if true then
                 if SMODS.pseudorandom_probability(card, 'group_0_c127eee4', 1, card.ability.extra.odds, 'j_sholextra_diduncsnap', false) then
      			for i = 1, #G.jokers.cards do
