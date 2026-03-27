@@ -1,13 +1,13 @@
 {
   "id": "sholextra",
-  "name": "SholiumExtra",
+  "name": "Refugium",
   "author": [
     "GreenKookie"
   ],
-  "description": "sholium with extra stuff",
+  "description": "SholiumExtraExtra™",
   "prefix": "sholextra",
   "main_file": "main.lua",
-  "version": "2.6.1",
+  "version": "2.6.1r3",
   "priority": 2026,
   "badge_colour": "228922",
   "badge_text_colour": "FFFFFF",
