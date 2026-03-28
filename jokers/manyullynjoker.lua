@@ -1,7 +1,3 @@
-if not next(SMODS.find_mod("Cryptid")) then
-  return nil
-end
-
 SMODS.Joker{ --Manyullyn Joker
     key = "manyullynjoker",
     config = {
@@ -28,8 +24,8 @@ SMODS.Joker{ --Manyullyn Joker
         w = 71 * 1, 
         h = 95 * 1
     },
-    cost = 12,
-    rarity = 'cry_epic',
+    cost = 20,
+    rarity = 4,
     blueprint_compat = true,
     demicoloncompat = true,
     eternal_compat = true,
