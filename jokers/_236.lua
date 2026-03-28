@@ -28,6 +28,7 @@ SMODS.Joker{ --2+3=6
     cost = 6,
     rarity = 3,
     blueprint_compat = true,
+    demicoloncompat = true,
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
@@ -39,7 +40,7 @@ SMODS.Joker{ --2+3=6
     end,
     
     calculate = function(self, card, context)
-        if context.cardarea == G.jokers and context.joker_main  then
+        if context.cardarea == G.jokers and context.joker_main or context.forcetrigger then
             return {
                 x_chips = card.ability.extra.xchips0,
                 extra = {
