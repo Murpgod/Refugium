@@ -35,7 +35,7 @@ SMODS.Joker{ --@amphiapple you are incompetent
     
     loc_vars = function(self, info_queue, card)
         
-        local new_numerator, new_denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_refugeiu_amphiappleyouareincompetent') 
+        local new_numerator, new_denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, 'j_sholextra_amphiappleyouareincompetent') 
         return {vars = {new_numerator, new_denominator}}
     end,
     
@@ -50,7 +50,7 @@ SMODS.Joker{ --@amphiapple you are incompetent
                         G.GAME.joker_buffer = G.GAME.joker_buffer + 1
                         G.E_MANAGER:add_event(Event({
                             func = function()
-                                local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_[refugium]_amphiappleyouareincompetent' })
+                                local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_sholextra_hexaliacrashout' })
                                 if joker_card then
                                     
                                     
@@ -69,7 +69,7 @@ SMODS.Joker{ --@amphiapple you are incompetent
         end
         if context.end_of_round and context.game_over == false and context.main_eval  then
             if true then
-                if SMODS.pseudorandom_probability(card, 'group_0_444fa168', 1, card.ability.extra.odds, 'j_refugeiu_amphiappleyouareincompetent', false) then
+                if SMODS.pseudorandom_probability(card, 'group_0_444fa168', 1, card.ability.extra.odds, 'j_sholextra_amphiappleyouareincompetent', false) then
                     SMODS.calculate_effect({func = function()
                         local target_joker = card
                         
