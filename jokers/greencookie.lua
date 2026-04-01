@@ -3,7 +3,7 @@ SMODS.Joker{ --Green Cookie
     config = {
         extra = {
             mult = 17,
-            multiplier = 1.03
+            multiplier = 1.05
         }
     },
     loc_txt = {

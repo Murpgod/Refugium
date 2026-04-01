@@ -2,14 +2,15 @@ SMODS.Joker{ --Iciclez_ alt
     key = "iciclezalt",
     config = {
 		extra = {
-			mult = 1.1
+			mult = 1.1,
+            slots = 1
 		}
     },
     loc_txt = {
         ['name'] = 'Iciclez_ alt',
         ['text'] = {
             [1] = '{X:red,C:white}X#1#{} Mult',
-            [2] = '{C:dark_edition}+1{} Joker slot'
+            [2] = '{C:dark_edition}+#2#{} Joker slot'
         },
         ['unlock'] = {
             [1] = ''
@@ -34,7 +35,7 @@ SMODS.Joker{ --Iciclez_ alt
     atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)
-        return {vars = {card.ability.extra.mult}}
+        return {vars = {card.ability.extra.mult, card.ability.extra.slots}}
     end,
 
     calculate = function(self, card, context)
@@ -46,11 +47,11 @@ SMODS.Joker{ --Iciclez_ alt
     end,
 
     add_to_deck = function(self, card, from_debuff)
-        G.jokers.config.card_limit = G.jokers.config.card_limit + 1
+        G.jokers.config.card_limit = G.jokers.config.card_limit + card.ability.extra.slots
     end,
 
     remove_from_deck = function(self, card, from_debuff)
-        G.jokers.config.card_limit = G.jokers.config.card_limit - 1
+        G.jokers.config.card_limit = G.jokers.config.card_limit - card.ability.extra.slots
     end
 }
 

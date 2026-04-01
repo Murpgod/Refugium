@@ -3,7 +3,7 @@ SMODS.Joker{ --Hepatizon Joker
     key = "hepatizonjoker",
     config = {
         extra = {
-            rep = 0,
+            rep = 1,
             current = 0
         }
     },

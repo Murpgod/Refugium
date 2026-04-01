@@ -23,8 +23,8 @@ SMODS.Joker{ --Cars forehead
         y = 8
     },
     display_size = {
-        w = 71 * 1, 
-        h = 95 * 0.5
+        w = 71 * 2, 
+        h = 95 * 1.5
     },
     cost = 20,
     rarity = 4,

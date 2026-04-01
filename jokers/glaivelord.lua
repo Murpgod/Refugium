@@ -3,12 +3,12 @@ SMODS.Joker{ --Glaive Lord
     config = {
         extra = {
             chips = 0,
-            chipsmod = 3,
+            chipsmod = 8,
             first = 1
         }
     },
     loc_txt = {
-        ['name'] = 'Glaive Lord',
+        ['name'] = 'Glaive Lord (v43)',
         ['text'] = {
             [1] = 'This Joker gains {C:blue}+#2#{} Chips',
             [2] = 'for each {C:attention}non-first{} scored card',

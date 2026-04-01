@@ -3,11 +3,11 @@ SMODS.Joker{ --Pop and Awe
     config = {
         extra = {
             chips = 8,
-            xchips = 3
+            xchips = 4
         }
     },
     loc_txt = {
-        ['name'] = 'Pop and Awe',
+        ['name'] = 'Pop and Awe (v39)',
         ['text'] = {
             [1] = '{C:blue}-#1#{} Chips',
             [2] = '{X:blue,C:white}X#2#{} Chips'

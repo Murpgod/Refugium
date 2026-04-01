@@ -11,7 +11,7 @@ SMODS.Joker{ --Bloon Exclusion Zone (v38+)
         ['name'] = 'Bloon Exclusion Zone (v38+)',
         ['text'] = {
             [1] = 'Every scored {C:spades}Spades{}',
-            [2] = 'permanently gains {C:red}+6{} Mult'
+            [2] = 'permanently gains {C:red}+#1#{} Mult'
         },
         ['unlock'] = {
             [1] = 'Unlocked by default.'
@@ -33,6 +33,10 @@ SMODS.Joker{ --Bloon Exclusion Zone (v38+)
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+
+    loc_vars = function(self, info_queue, card)
+        return {vars = {card.ability.extra.pb_mult_7e6bb471}}
+    end,
 
     calculate = function(self, card, context)
         if context.individual and context.cardarea == G.play  then
