@@ -57,8 +57,10 @@ SMODS.Joker{ --Neurax worm
         if context.individual and context.cardarea == G.hand and not context.end_of_round then
             if true then
                 if SMODS.pseudorandom_probability(card, 'group_0_ea22710b', 1, card.ability.extra.odds, 'j_sholextra_neuraxworm', false) then
-              SMODS.calculate_effect({e_mult = card.ability.extra.mult}, card)
-          end
+					return {
+                        e_mult = card.ability.extra.mult
+				    }
+                end
             end
         end
         if context.forcetrigger then

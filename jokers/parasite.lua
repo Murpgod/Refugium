@@ -3,7 +3,7 @@ SMODS.Joker{ --Parasite
     config = {
         extra = {
             mult = 0,
-            mod = 5
+            mod = 6
         }
     },
     loc_txt = {

@@ -3,11 +3,11 @@ SMODS.Joker{ --Pop and Awe
     config = {
         extra = {
             chips = 8,
-            xchips = 3
+            xchips = 4
         }
     },
     loc_txt = {
-        ['name'] = 'Pop and Awe',
+        ['name'] = 'Pop and Awe (v39)',
         ['text'] = {
             [1] = '{C:blue}-#1#{} Chips',
             [2] = '{X:blue,C:white}X#2#{} Chips'
@@ -25,7 +25,7 @@ SMODS.Joker{ --Pop and Awe
         h = 95 * 1
     },
     cost = 6,
-    rarity = 3,
+    rarity = 2,
     blueprint_compat = true,
     demicoloncompat = true,
     eternal_compat = true,

@@ -2,7 +2,7 @@ SMODS.Joker{ --Pouakai (v36-38)
     key = "pouakai",
     config = {
         extra = {
-            handsizemod = 1,
+            handsizemod = 2,
             basehandsize = 8
         }
     },
